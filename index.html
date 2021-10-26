@@ -13,6 +13,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script src="./js/app.js" defer></script>
 </head>
 <body>
 
@@ -33,37 +34,37 @@
       $20/mo.thereafter
     </button>
 
-    <form class="form-card">
+    <form class="form-card" id="form-free-trial">
       <!-- First Name -->
       <label class="custom-field">
         <input type="text"
           class="input"
-          placeholder="First Name" required
-          name="firstnameField" id="firstnameField"
+          placeholder="First Name"
+          name="first-name-Field" id="firstnameField"
         />
       </label>
       <!-- Last Name  -->
       <label class="custom-field">
         <input type="text"
           class="input"
-          placeholder="Last Name" required
-          name="lastnameField" id="lastnameField"
+          placeholder="Last Name"
+          name="last-name-Field" id="lastnameField"
         />
       </label>
       <!-- Email Address -->
       <label class="custom-field">
         <input type="email"
           class="input"
-          placeholder="Email Address" required
-          name="emailField" id="emailField"
+          placeholder="Email Address"
+          name="email-Field" id="emailField"
         />
       </label>
       <!-- Password -->
       <label class="custom-field">
         <input type="password" 
           class="input"
-          placeholder="Password" required
-          name="passwordField" id="passwordField"
+          placeholder="Password"
+          name="password-Field" id="passwordField"
         />
       </label>
       <button class="btn-form">
