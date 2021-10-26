@@ -113,6 +113,11 @@ main > p {
 	height: 48px;
 	font-size: 1rem;
 	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn-form:hover {
+	filter: brightness(150%);
 }
 
 .form-card > p {
@@ -140,4 +145,49 @@ a {
 	width: 16px;
 	height: 16px;
 	margin-left: 8px;
+}
+
+@media only screen and (min-width: 1040px) {
+	body {
+		background: url(../images/bg-intro-desktop.png) var(--red);
+		display: flex;
+		height: 100vh;
+		align-items: center;
+	}
+	
+	main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 100px repeat(2, 300px);
+		grid-template-areas: ". btn" "title form" "subtitle form";
+	}
+
+	h1 {
+		grid-area: title;
+		display: grid;
+		align-self: flex-end;
+	}
+
+	#subtitle {
+		grid-area: subtitle;
+		display: grid;
+		align-self: flex-start;
+	}
+
+	.btn-try {
+		grid-area: btn;
+		height: 64px;
+	}
+
+	.form-card {
+		grid-area: form;
+	}
+
+	.btn-try, .form-card {
+		width: 70%;
+	}
+
+	.btn-form {
+		height: 64px;
+	}
 }
